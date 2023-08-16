@@ -18,11 +18,10 @@ public class Ex22 {
         float tx_cres_B=0.02f;
         int n_ano=0;
         while(habitantes_B>=habitantes_A){
-            habitantes_A+=(int)((float)habitantes_A*tx_cres_A);
-            System.out.println(habitantes_A);
-            //habitantes_B+= (int) Math.floor(habitantes_B*tx_cres_B);
-            //System.out.printf("Ano:%d\nHabitantes Pais A:%d\nHabitantes Pais B:%d\n",n_ano,habitantes_A,habitantes_B);
             n_ano++;
+            habitantes_A+=(int)Math.ceil(habitantes_A*tx_cres_A);
+            habitantes_B+=(int)Math.ceil(habitantes_B*tx_cres_B);
+            System.out.printf("Ano:%d\nHabitantes Pais A:%d\nHabitantes Pais B:%d\n",n_ano,habitantes_A,habitantes_B);
         }
         System.out.println(n_ano);
         in.close();
