@@ -23,7 +23,6 @@ class Ex1{
         int total_concursados=0;
         int n_concursados=0;
         int n_concursadas=0;
-        int n_homens=0;
         int maior_idade_homem=0;
         int qt_mulher_30_mais=0;
         int soma_idade_h_40_menos=0;
@@ -90,7 +89,7 @@ class Ex1{
 
         }
         float media= qt_h_40_menos>0 ? (float)soma_idade_h_40_menos/(float)qt_h_40_menos:0.0f;
-        System.out.printf("o número de funcionárias concursadas:%d\no número de funcionários (somente homens):%d\na maior idade dos homens concursados:%d\na quantidade de mulheres com mais de 30 anos sem concurso:%d\na quantidade de concursados(as):%d\na média das alturas dos homens com menos de 40 anos:%.2f\n",n_concursadas,n_funcionarios,maior_idade_homem,qt_mulher_30_mais,total_concursados);
+        System.out.printf("o número de funcionárias concursadas:%d\no número de funcionários (somente homens):%d\na maior idade dos homens concursados:%d\na quantidade de mulheres com mais de 30 anos sem concurso:%d\na quantidade de concursados(as):%d\na média das alturas dos homens com menos de 40 anos:%.2f\n",n_concursadas,n_funcionarios,maior_idade_homem,qt_mulher_30_mais,total_concursados,media);
         in.close();
     }
 }
