@@ -40,7 +40,7 @@ public class Ex6{
         }
         
         System.out.println(seq);
-        
+        in.close();
     }
 }
 
