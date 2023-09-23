@@ -22,11 +22,11 @@ public class Ex2{
         int dias=0;
         boolean ano_eh_bissexto = ((ano % 400) == 0) || ( (ano % 4 == 0) && (ano % 100 != 0));
         boolean mes_tem_30_dias=mes==ABRIL||mes==JUNHO||mes==SETEMBRO||mes==NOVEMBRO;
-        if(mes_tem_30_dias){
+        if(mes_tem_30_dias)
           dias=30;
-        } else if( ano_eh_bissexto && mes==FEVEREIRO){
+          else if( ano_eh_bissexto && mes==FEVEREIRO)
             dias=29;
-        } else if (mes==FEVEREIRO) 
+          else if (mes==FEVEREIRO) 
             dias=28;
         else
           dias=31;
