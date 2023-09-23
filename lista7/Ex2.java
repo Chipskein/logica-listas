@@ -11,7 +11,11 @@ public class Ex2{
     */
     public static void main(String args[]){
         Scanner in=new Scanner(System.in);
-        
+        System.out.println("Digite o ano e o mes");
+        int ano=in.nextInt();
+        int mes=in.nextInt();
+        boolean eh_bissexto = ((ano % 400) == 0) || ( (ano % 4 == 0) && (ano % 100 != 0));
+
         in.close();
     }
 }
