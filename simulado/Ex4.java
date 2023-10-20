@@ -23,5 +23,6 @@ public class Ex4{
             }
         }
         System.out.println(somatorio);
+        in.close();
     }
 }

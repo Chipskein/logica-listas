@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.lang.Math;
 public class Ex7{
     /*
         Faça um programa que dado um valor inicial indicando quantos valores serão
