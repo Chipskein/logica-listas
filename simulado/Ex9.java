@@ -13,8 +13,6 @@ public class Ex9 extends JPanel {
         //parte de cima
         for(int v=0;v<=400;v+=20){
             g.drawLine(v,v,400-v,0);
-        }
-        for(int v=0;v<=400;v+=20){
             g.drawLine(v,400,400-v,400-v);
         }
     }
