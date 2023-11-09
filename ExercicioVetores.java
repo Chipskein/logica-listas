@@ -3,7 +3,7 @@ public class ExercicioVetores{
     public static void main(String[] args){
         Scanner in=new Scanner(System.in);
         final int TAMANHO=10;
-        int [] x={20,10,15,399,10};//new int[TAMANHO];
+        int [] x=new int[TAMANHO];
         testando_label:
         while(true){
             System.out.println("Escolha ai uma opção:");
@@ -106,7 +106,19 @@ public class ExercicioVetores{
                     System.out.printf("%d=>%d\n%d=>%d\n",v1,x[pos1],v2,x[pos2]);
                     break;
                 case 8:
-                    //UE
+                    int qt_sequencias_crescentes=0;
+                    int conta_seq=0;
+                    for(int i=0;i<x.length-1;i++){
+                        if(x[i+1]-x[i]==1){
+                           if(conta_seq==0){
+                                qt_sequencias_crescentes++;
+                           } 
+                           conta_seq++; 
+                        } else {
+                            conta_seq=0;
+                        }
+                    }
+                    System.out.printf("O vetor x tem %d sequências crescentes\n",qt_sequencias_crescentes);
                     break;
                 case 9:
                     for(int i=0;i<x.length;i++){
@@ -122,7 +134,6 @@ public class ExercicioVetores{
                     break;
                 case 10:
                     System.out.println("Digite o tamanho do vetor x2");
-                    
                     int tamanho=in.nextInt();
                     int []x2=new int[tamanho];
                     int j=0;
@@ -140,13 +151,12 @@ public class ExercicioVetores{
                         msg2+=""+x2[i]+" ";
                     }
                     System.out.println(msg2);
-                    
                     break;
                 default:
                     System.out.println("Opção invalida");
                     break;
             }
         }
-        
+        in.close();
     }
 }
